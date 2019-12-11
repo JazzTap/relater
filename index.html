@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>relater</title>
+<link rel="stylesheet" type="text/css" href="./inspector.css">
+<link rel="stylesheet" type="text/css" href="./wing.min.css">
+<style>
+    textarea {
+        height: initial;
+    }
+    input[type="range"] {
+        width: 80%;
+    }
+</style>
+<body>
+
+<body>
+    <div class="row">
+        <div class="col" id="zero"> </div>
+        <div class="col" id="two"></div>
+        <div class="col" id="five"></div>
+    </div>
+    <div class="row">
+        <div class="col" id="one"></div>
+        <div class="col">
+            <div id="four"></div>
+            <div id="three"></div>
+            <div id="input"></div>
+            <div id="matches"></div>
+        </div>
+    </div>
+    <div class="row"></div>  
+</body>
+
+</body>
+<script type="module">
+
+import define from "./index.js";
+import {Runtime, Library, Inspector} from "./runtime.js";
+
+const renders = {
+        "viewof T": "#zero",
+        "viewof seed": "#two",
+        "viewIcs": "#five",
+
+        "story": "#one",
+
+        "viewport": "#four",
+        "hint": "#three",
+        "viewOfInput": "#input",
+        "inMatches": "#matches",
+      };
+const runtime = new Runtime()
+const main = runtime.module(define, (name) => {
+    const selector = renders[name];
+    if (selector) {
+        return new Inspector(document.querySelector(selector));
+    }
+});
+
+</script>

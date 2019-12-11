@@ -1,0 +1,14 @@
+{
+  "name": "8112bce6b2f9941e",
+  "main": "8112bce6b2f9941e@1380.js",
+  "version": "1380.0.0",
+  "homepage": "https://observablehq.com/d/8112bce6b2f9941e",
+  "author": {
+    "name": "Jasmine Otto",
+    "url": "https://observablehq.com/@jazztap"
+  },
+  "type": "module",
+  "peerDependencies": {
+    "@observablehq/runtime": "4"
+  }
+}

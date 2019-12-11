@@ -1,0 +1,14 @@
+ 
+  let improveOk = [closer, unary, ok, literal],
+      reduceOk = [further, unary, ok, literal],
+      improveFail = [closer, unary, nah, literal],
+      reduceFail = [further, unary, nah, literal],
+      improveBoth = [closer, binary, literal],
+      reduceBoth = [further, binary, literal],
+      improveAtCost = [new Approach('tradeoff'), binary, literal],
+      
+      neglect = [new Approach('tradeoff'), binary, introspect],
+      reciprocate = [closer, unary, introspect],
+      distance = [further, unary, introspect],
+      reconcile = [closerOops, unary, introspect],
+      reject = [furtherOops, unary, introspect]
