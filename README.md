@@ -1,6 +1,6 @@
 # relater
 
-https://observablehq.com/d/8112bce6b2f9941e@1380
+https://observablehq.com/d/a02a42cb0118c640
 
 View this notebook in your browser by running a web server in this folder. For
 example:
